@@ -1,0 +1,259 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+}
+
+html,
+body {
+    height: 400%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(360deg, #53b1d6, #275e74);
+}
+
+.container {
+    color: aliceblue;
+    height: 100%;
+}
+
+.container2 {
+    color: aliceblue;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#aboutme h1 {
+    position: relative;
+    top: 10%;
+    font-weight: bold;
+}
+
+#aboutme h1:hover {
+    color: #2d677d;
+    transition: 0.5s;
+}
+
+#aboutme p {
+    position: relative;
+    text-align: justify;
+    top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+nav {
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -20px;
+    font-weight: bold;
+    position: fixed;
+}
+
+nav .brand {
+    font-weight: bold;
+}
+
+nav div.nav-group {
+    display: flex;
+    padding: 50px;
+}
+
+a.menu-item {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+a.menu-item:hover {
+    color: #2d677d;
+}
+
+a.menu-item:hover {
+    border-bottom: 3px solid #303030;
+}
+
+.nav-group.hamburger {
+    display: none;
+}
+
+.menus .hamburger {
+    display: none;
+}
+
+.menus .hamburger div:first-of-type {
+    transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.menus .hamburger div:last-of-type {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.hamburger div {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #ffffff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav-group.menus .menu-item:not(:first-child) {
+    margin-left: 1.4rem;
+}
+
+@media screen and (max-width: 576px) {
+    .menus.nav-group {
+        background-color: #2d677d;
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        margin: 0 !important;
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 50vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+    .menus.nav-group.show {
+        top: 0;
+    }
+    .menus.nav-group a {
+        font-size: 1.5rem;
+    }
+    .menus.nav-group a.menu-item:not(:first-child) {
+        margin-left: 0;
+        margin-top: 1.7rem;
+    }
+    .nav-group.hamburger {
+        display: block;
+    }
+    .menus .hamburger {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    .container3 h5 {
+        position: relative;
+        top: 15%;
+        font-size: 15px;
+    }
+}
+
+.nome {
+    text-align: center;
+    position: relative;
+    top: 15%;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 576px) {
+    .nome {
+        font-size: 16px;
+        top: 32%;
+    }
+    .roll {
+        top: 50%;
+    }
+    #aboutme p {
+        font-size: 20px;
+    }
+    #portfolio h5 {
+        font-size: 15px;
+    }
+}
+
+.list-inline li a {
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.list-inline li a:hover {
+    color: #ffffff;
+}
+
+.fa.fa-3x.fa-angle-double-down {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.fa.fa-3x.fa-angle-double-down:hover {
+    color: #ffffff;
+}
+
+.fa-angle-double-down::before {
+    content: "U+F103";
+}
+
+.roll {
+    position: relative;
+    text-align: center;
+    top: 65%;
+}
+
+
+/*Config container3*/
+
+.container3 {
+    color: aliceblue;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container3 h1 {
+    position: relative;
+    top: 10%;
+}
+
+.container3 h5 {
+    position: relative;
+    top: 15%;
+    font-size: 25px;
+}
+
+.container3 img {
+    position: relative;
+    top: 20%;
+}
+
+
+/*End config container3*/
+
+
+/*Config container4*/
+
+.container4 {
+    color: aliceblue;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#contact h1 {
+    position: relative;
+    top: 10%;
+}
+
+#contact h5 {
+    position: relative;
+    top: 15%;
+}
+
+#contact img {
+    position: relative;
+    top: 13%;
+}
+
+
+/*End config container4*/

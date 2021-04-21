@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav id='nav'>
+            <div class='brand nav-group'>
+                Personal Portfólio - Bruno Slamek
+            </div>
+            <div class='menus nav-group'>
+                <div class="hamburger">
+                    <div class='bar'></div>
+                    <div class='bar'></div>
+                </div>
+                <a class='menu-item' href='#aboutme'>About</a>
+                <a class='menu-item' href='#portfolio'>Projects</a>
+                <a class='menu-item' href='#contact'>Contact</a>
+            </div>
+            <div class="hamburger nav-group">
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        <!--END NAVBAR-->
+        <div class="nome">
+            <h1>Bruno Slamek</h1>
+            <p>Systems Development Student, focused on Back-end and curious about the Front-end</p>
+        </div>
+
+        <p class="roll"><a href="#aboutme"><i class="fa fa-3x fa-angle-double-down"></i></a></p>
+    </div>
+
+    <!--Container about me-->
+    <div id="aboutme" class="container2">
+        <h1>About me</h1>
+        <p>I am a student of Systems Analysis and Development, passionate about Back-end and curious about Front-end. Cloud computing enthusiast using Amazon Web Services, I like minimalism and coffee. In this portfolio, I used the technologies Html, css,
+            javascript, jquery. I have skills in logic, c++, c#, python, javascript, mysql, Sqlite, Aws, git and github. Passionate about solving bugs.</p>
+
+    </div>
+    <!--End container about me-->
+
+    <!--Container for projects-->
+    <div id="portfolio" class="container3">
+        <h1>Projects</h1>
+        <h5>All of my open source projects are on github</h5>
+        <a href="https://github.com/BrunoSlamek"><img src="./images/github.png " alt="Github" width="70 " height="70 " /></a>
+    </div>
+    <!--End container for projects-->
+
+    <!--Container for Contact-->
+    <div id="contact" class="container4">
+        <h1>Contact me</h1>
+        <h5>+55 (11)99591-4311</h5>
+        <br>
+        <h5>brunoslamek2@gmail.com</h5>
+        <br>
+        <h5>or</h5>
+        <br>
+        <h5>linkedin</h5>
+        <br>
+        <a href="https://www.linkedin.com/in/bruno-slamek/"><img src="./images/linkedin.png " alt="linkedin" width="70 " height="70 " /></a>
+        <!--End container for Contact-->
+
+        <!--scripts for navbar-->
+        <script src="./index.js "></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js "></script>
+        <script>
+            $('.hamburger').on('click', function() {
+                $('.menus.nav-group').toggleClass('show');
+            })
+
+            const minNavPadding = 10;
+            $('nav').css({
+                'background-color': 'rgba(256, 256, 256, 0)'
+            })
+
+            $(window).scroll(function() {
+                const windowScroll = $(window).scrollTop()
+                if (windowScroll < navHeight) {
+                    const padding = navOrigPadding - windowScroll / 2
+                    let newPadding = padding >= minNavPadding ? padding : minNavPadding;
+                    newPadding = newPadding > navOrigPadding ? navOrigPadding : newPadding;
+                    const opacity = 1 - (newPadding - minNavPadding) / (navOrigPadding - minNavPadding);
+                    const newOpacity = opacity >= 1 ? 1 : opacity;
+                    $('nav').css({
+                        'background-color': `rgba(256, 256, 256, ${newOpacity})`
+                    });
+                    $('nav .nav-group').css({
+                        padding: `${newPadding}px`
+                    })
+                }
+            })
+        </script>
+        <!--End scripts for navbar-->
+</body>
+
+</html>
