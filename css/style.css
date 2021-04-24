@@ -52,7 +52,6 @@ nav {
     align-items: center;
     top: -20px;
     font-weight: bold;
-    position: fixed;
 }
 
 nav .brand {
@@ -148,12 +147,31 @@ a.menu-item:hover {
         top: 15%;
         font-size: 15px;
     }
+    .nome {
+        font-size: 16px;
+        top: 32%;
+    }
+    .nome p {
+        font-size: 9px;
+    }
+    .roll {
+        top: 50%;
+    }
+    #aboutme p {
+        font-size: 20px;
+    }
+    #portfolio h5 {
+        font-size: 15px;
+    }
+    #aboutme h1 {
+        font-size: 30px
+    }
 }
 
 .nome {
     text-align: center;
     position: relative;
-    top: 15%;
+    top: 25%;
     font-size: 25px;
 }
 
@@ -186,24 +204,7 @@ a.menu-item:hover {
     }
 }
 
-@media screen and (max-width: 576px) {
-    .nome {
-        font-size: 16px;
-        top: 32%;
-    }
-    .nome p {
-        font-size: 9px;
-    }
-    .roll {
-        top: 50%;
-    }
-    #aboutme p {
-        font-size: 20px;
-    }
-    #portfolio h5 {
-        font-size: 15px;
-    }
-}
+@media screen and (max-width: 576px) {}
 
 .list-inline li a {
     color: #ffffff;
@@ -216,7 +217,7 @@ a.menu-item:hover {
 
 .fa.fa-3x.fa-angle-double-down {
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 
 .fa.fa-3x.fa-angle-double-down:hover {
