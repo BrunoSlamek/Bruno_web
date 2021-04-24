@@ -157,10 +157,42 @@ a.menu-item:hover {
     font-size: 25px;
 }
 
+.nome p {
+    color: white;
+    overflow: hidden;
+    border-right: 0.10em solid #275e74;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-right: 25 auto;
+    animation: typing 5.5s steps(30), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #275e74;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .nome {
         font-size: 16px;
         top: 32%;
+    }
+    .nome p {
+        font-size: 9px;
     }
     .roll {
         top: 50%;
