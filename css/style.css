@@ -4,6 +4,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
+/*alterando cor da seleção*/
+
+::selection {
+    color: #53b1d6;
+    background: #494848;
+}
+
 html,
 body {
     height: 400%;
