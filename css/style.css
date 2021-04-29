@@ -8,8 +8,8 @@
 /*alterando cor da seleção*/
 
 ::selection {
-    color: #53b1d6;
-    background: #494848;
+    color: #275e74;
+    background: #ffffff;
 }
 
 html,
@@ -162,9 +162,6 @@ a.menu-item:hover {
     .nome p {
         font-size: 9px;
     }
-    .roll {
-        top: 50%;
-    }
     #aboutme p {
         font-size: 20px;
     }
@@ -173,6 +170,14 @@ a.menu-item:hover {
     }
     #aboutme h1 {
         font-size: 30px
+    }
+    #Scroll {
+        top: 60%;
+        font-size: 20px;
+    }
+    .roll {
+        top: 62%;
+        font-size: 15px;
     }
 }
 
@@ -236,10 +241,18 @@ a.menu-item:hover {
     content: "U+F103";
 }
 
+#Scroll {
+    position: relative;
+    text-align: center;
+    top: 60%;
+    font-size: 20px;
+}
+
 .roll {
     position: relative;
     text-align: center;
-    top: 65%;
+    top: 62%;
+    font-size: 15px;
 }
 
 
