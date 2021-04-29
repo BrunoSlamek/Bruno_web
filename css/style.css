@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     font-family: 'Raleway', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 
@@ -19,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(360deg, #53b1d6, #275e74);
+    background-image: linear-gradient(180deg, #53b1d6, rgb(12, 71, 95));
 }
 
 .container {
@@ -60,6 +61,7 @@ nav {
     align-items: center;
     top: -20px;
     font-weight: bold;
+    position: fixed;
 }
 
 nav .brand {
@@ -105,7 +107,7 @@ a.menu-item:hover {
 .hamburger div {
     display: block;
     width: 28px;
-    height: 3px;
+    height: 5px;
     background: #ffffff;
     margin: 5px;
     cursor: pointer;
@@ -164,12 +166,16 @@ a.menu-item:hover {
     }
     #aboutme p {
         font-size: 20px;
+        position: relative;
+        top: 25%;
     }
     #portfolio h5 {
         font-size: 15px;
     }
     #aboutme h1 {
-        font-size: 30px
+        font-size: 30px;
+        position: relative;
+        top: 20%;
     }
     #Scroll {
         top: 60%;
@@ -184,18 +190,17 @@ a.menu-item:hover {
 .nome {
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 45%;
     font-size: 25px;
 }
 
 .nome p {
     color: white;
     overflow: hidden;
-    border-right: 0.10em solid #275e74;
     white-space: nowrap;
     margin: 0 auto;
     margin-right: 25 auto;
-    animation: typing 5.5s steps(30), blink-caret 0.5s step-end infinite;
+    animation: typing 3.5s steps(150), blink-caret 0.5s step-end infinite;
 }
 
 @keyframes typing {
@@ -244,7 +249,7 @@ a.menu-item:hover {
 #Scroll {
     position: relative;
     text-align: center;
-    top: 55%;
+    top: 72%;
     font-size: 20px;
     animation: float 2s ease-in-out infinite;
 }
@@ -252,7 +257,7 @@ a.menu-item:hover {
 .roll {
     position: relative;
     text-align: center;
-    top: 58%;
+    top: 75%;
     font-size: 15px;
     animation: float 2s ease-in-out infinite;
 }
@@ -330,27 +335,10 @@ a.menu-item:hover {
 /* CONFIG PARA PARTICULAS */
 
 #canvas {
-    position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     left: 0;
-}
-
-#text {
-    min-height: 100vh;
-    width: 100vw;
-    z-index: 1;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 8vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#text h1 {
-    opacity: 0.9
 }
 
 
